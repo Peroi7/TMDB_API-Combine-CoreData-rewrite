@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NSCast" representedClassName="NSCast" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="movieCast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSMovieDetails" inverseName="cast" inverseEntity="NSMovieDetails"/>
+    </entity>
+    <entity name="NSMovie" representedClassName="NSMovie" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="poster" optional="YES" attributeType="Binary"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="movieDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSMovieDetails" inverseName="details" inverseEntity="NSMovieDetails"/>
+    </entity>
+    <entity name="NSMovieDetails" representedClassName="NSMovieDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String"/>
+        <attribute name="poster" optional="YES" attributeType="Binary"/>
+        <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="tagline" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="cast" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NSCast" inverseName="movieCast" inverseEntity="NSCast"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSMovie" inverseName="movieDetails" inverseEntity="NSMovie"/>
+    </entity>
+    <elements>
+        <element name="NSCast" positionX="304.464111328125" positionY="25.34396362304687" width="128" height="59"/>
+        <element name="NSMovie" positionX="-174.3309936523437" positionY="48.79196166992188" width="128" height="89"/>
+        <element name="NSMovieDetails" positionX="-34.42608642578125" positionY="-246.4436645507812" width="128" height="164"/>
+    </elements>
+</model>

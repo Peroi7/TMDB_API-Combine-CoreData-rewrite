@@ -1,0 +1,26 @@
+PODS:
+  - ProgressHUD (13.6)
+  - PureLayout (3.1.9)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+
+DEPENDENCIES:
+  - ProgressHUD
+  - PureLayout
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ProgressHUD
+    - PureLayout
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+
+PODFILE CHECKSUM: 7f5c9db867789899778b403b3a0d3d21fd01ea22
+
+COCOAPODS: 1.11.2
